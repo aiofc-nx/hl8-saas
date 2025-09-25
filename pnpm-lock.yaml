@@ -98,9 +98,24 @@ importers:
 
   packages/config:
     dependencies:
+      '@hl8/common':
+        specifier: workspace:*
+        version: link:../common
+      '@hl8/logger':
+        specifier: workspace:*
+        version: link:../logger
+      '@hl8/utils':
+        specifier: workspace:*
+        version: link:../utils
+      '@nestjs/common':
+        specifier: 11.1.6
+        version: 11.1.6(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@swc/helpers':
         specifier: ~0.5.11
         version: 0.5.17
+      dotenv:
+        specifier: 16.4.7
+        version: 16.4.7
 
   packages/constants:
     dependencies:
@@ -122,9 +137,24 @@ importers:
 
   packages/database:
     dependencies:
+      '@hl8/config':
+        specifier: workspace:*
+        version: link:../config
+      '@hl8/logger':
+        specifier: workspace:*
+        version: link:../logger
+      '@nestjs/common':
+        specifier: 11.1.6
+        version: 11.1.6(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@swc/helpers':
         specifier: ~0.5.11
         version: 0.5.17
+      chalk:
+        specifier: 4.1.2
+        version: 4.1.2
+      mkdirp:
+        specifier: 1.0.4
+        version: 1.0.4
 
   packages/logger:
     dependencies:

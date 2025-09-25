@@ -16,10 +16,10 @@
     }
   },
   "dependencies": {
+    "@hl8/constants": "workspace:*",
     "@nestjs/common": "11.1.6",
-    "fastify": "^5.6.1",
-    "pino": "^9.11.0",
     "@swc/helpers": "~0.5.11",
-    "@hl8/constants": "workspace:*"
+    "fastify": "^5.6.1",
+    "pino": "^9.11.0"
   }
 }

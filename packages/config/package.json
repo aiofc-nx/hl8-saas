@@ -16,6 +16,11 @@
     }
   },
   "dependencies": {
-    "@swc/helpers": "~0.5.11"
+    "@hl8/common": "workspace:*",
+    "@hl8/logger": "workspace:*",
+    "@hl8/utils": "workspace:*",
+    "@nestjs/common": "11.1.6",
+    "@swc/helpers": "~0.5.11",
+    "dotenv": "16.4.7"
   }
 }

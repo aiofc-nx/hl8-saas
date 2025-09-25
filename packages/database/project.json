@@ -1,0 +1,20 @@
+{
+  "name": "database",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/database/src",
+  "projectType": "library",
+  "tags": ["scope:nestjs\"", "\"type:lib"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "packages/database/dist",
+        "main": "packages/database/src/index.ts",
+        "tsConfig": "packages/database/tsconfig.lib.json",
+        "skipTypeCheck": true,
+        "stripLeadingPaths": true
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "contracts",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/contracts/src",
+  "projectType": "library",
+  "tags": ["scope:nestjs\"", "\"type:lib"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:swc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "packages/contracts/dist",
+        "main": "packages/contracts/src/index.ts",
+        "tsConfig": "packages/contracts/tsconfig.lib.json",
+        "skipTypeCheck": true,
+        "stripLeadingPaths": true
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "../../packages/utils"
+    },
+    {
+      "path": "../../packages/logger"
+    },
+    {
+      "path": "../../packages/database"
+    },
+    {
+      "path": "../../packages/core"
+    },
+    {
+      "path": "../../packages/contracts"
+    },
+    {
+      "path": "../../packages/constants"
+    },
+    {
+      "path": "../../packages/config"
+    },
+    {
+      "path": "../../packages/common"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}

@@ -82,5 +82,5 @@ export * from './lib/context';
 export * from './lib/logger.decorator';
 export { LogMethod, RequestContext } from './lib/logger.decorator';
 
-// 示例和文档导出
-export * from './example';
+// 示例和文档导出（仅在开发环境中使用）
+// export * from './example';

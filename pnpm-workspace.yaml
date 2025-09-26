@@ -1,3 +1,4 @@
 packages:
-- packages/*
-- '!forks/*'
+  - apps/*
+  - packages/**
+  - "!forks/*"

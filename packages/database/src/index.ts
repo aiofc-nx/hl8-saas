@@ -24,3 +24,8 @@ export * from './lib/database.helper';
 
 // 导出实体管理器
 export * from './lib/entity-manager';
+
+// 导出实体
+export * from './entities/user.entity';
+export * from './entities/tenant.entity';
+export * from './entities/organization.entity';

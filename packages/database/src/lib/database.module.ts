@@ -3,6 +3,9 @@ import { MikroOrmModule } from '@mikro-orm/nestjs';
 import { ConfigModule, ConfigService } from '@hl8/config';
 import { ConnectionManager } from './connection-manager';
 import { EntityManagerService } from './entity-manager';
+import { User } from '../entities/user.entity';
+import { Tenant } from '../entities/tenant.entity';
+import { Organization } from '../entities/organization.entity';
 
 /**
  * 数据库管理模块
@@ -60,8 +63,8 @@ import { EntityManagerService } from './entity-manager';
 				const postgresConfig = configService.getConfigValue('database.postgresql');
 				return {
 					...postgresConfig,
-					entities: postgresConfig.entities || [],
-					entitiesTs: postgresConfig.entitiesTs || [],
+					entities: [User, Tenant, Organization],
+					entitiesTs: [User, Tenant, Organization],
 					migrations: {
 						path: postgresConfig.migrations?.path || './dist/migrations/postgresql',
 						pattern: /^[\w-]+\d+\.(ts|js)$/,

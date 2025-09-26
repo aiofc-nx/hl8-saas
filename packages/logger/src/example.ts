@@ -10,7 +10,9 @@
  */
 
 import { FastifyInstance, FastifyRequest } from 'fastify';
-import { LoggerModule, PinoLogger, InjectLogger, LogMethod, LogPerformance, LogError } from './index';
+import { LoggerModule, InjectLogger } from './lib/logger.module';
+import { PinoLogger } from './lib/pino-logger';
+import { LogMethod, LogPerformance, LogError } from './lib/logger.decorator';
 
 /**
  * 用户服务示例
